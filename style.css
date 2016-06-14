@@ -97,6 +97,18 @@ body {
 	padding: 0 25px;
 }
 
+.errorText {
+	display: none;
+	color: #E22426;
+	margin-bottom: 10px;
+}
+
+.submittedText {
+	display: none;
+	color: #0dad0d;
+	margin-bottom: 10px;
+}
+
 .spamWrapper {
 	color: #5A5A5A;
 }

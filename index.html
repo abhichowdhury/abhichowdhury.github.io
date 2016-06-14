@@ -5,6 +5,19 @@
 		<link rel="stylesheet" type="text/css" href="normalize.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="jquery-3.0.0.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyClsr6d1Sdf_BcYKEygYcM6m6oQTQQFcjw",
+		    authDomain: "project-3359415329179070709.firebaseapp.com",
+		    databaseURL: "https://project-3359415329179070709.firebaseio.com",
+		    storageBucket: "project-3359415329179070709.appspot.com",
+		  };
+		  firebase.initializeApp(config);
+		</script>
+		<script src="script.js"></script>
 	</head>
 
 	<body>
@@ -13,7 +26,7 @@
 			<!-- logo -->
 			<div class="header">
 				<div class="headerLogo">Guru</div>
-				<div class="headerSubtext">SAT on the go</div>
+				<div class="headerSubtext">Study for the SAT on the go</div>
 			</div>
 
 			<!-- body -->
@@ -23,7 +36,7 @@
 				<div class="col-md-6 col-sm-6">
 					<div class="descriptionWrapper">
 						<div class="descriptionTitle">
-							Study for the SAT on the go.
+							Not enough SAT prep time?<br>We've got you covered.
 						</div>
 
 						<div class="descriptionText">
@@ -39,19 +52,27 @@
 						</div>
 
 						<div class="formDescription">
-							Sign up with your email below to get more information.
+							Sign up with your email below to get more information!
 						</div>
 
 						<div class="formInputWrapper">
-							<input class="formInput" placeholder="Enter your email address"/>
+							<input id="formInput" class="formInput" placeholder="Enter your email address"/>
 						</div>
 
 						<div class="submitButtonWrapper">
-							<button class="submitButton">Sign up</button>
+							<button id="submitBtn" class="submitButton">Sign up</button>
+						</div>
+
+						<div class="errorText">
+							Please enter a valid email address.
+						</div>
+
+						<div class="submittedText">
+							Thanks for signing up! Check your inbox soon for more information regarding our upcoming product launch!
 						</div>
 
 						<div class="spamWrapper">
-							We'll never share your information or send you nasty spam. Promise.
+							We promise to never share your information or send you spam.
 						</div>
 
 					</div>
